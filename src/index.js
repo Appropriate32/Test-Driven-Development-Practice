@@ -1,7 +1,5 @@
 import "./styles.css";
 
-function product(a, b) {
-  return a * b;
-}
-
-export default product;
+export const capitalize = (word) => {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+};

@@ -1,5 +1,9 @@
-import product from "./index.js";
+import { capitalize } from "./index.js";
 
-test("multiplies 2 * 4 to equal 8", () => {
-  expect(product(2, 4)).toBe(8);
+test("converts 'hello' to 'Hello'", () => {
+  expect(capitalize("hello")).toBe("Hello");
+});
+
+test("converts 'hi' to 'Hello' ", () => {
+  expect(capitalize("hi")).toBe("Hi");
 });
